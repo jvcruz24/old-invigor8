@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Started - Invigor8 Medical Care</title>
+  <meta name="description" content="Start your Invigor8 health journey. Complete your registration and medical history form.">
+  <meta name="theme-color" content="#5a36c4">
+  <meta property="og:title" content="Get Started - Invigor8 Medical Care">
+  <meta property="og:description" content="Start your personalized health journey with Invigor8. Available for Hawaii and Oregon residents.">
+  <meta property="og:image" content="assets/images/Invigor8header.png">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav-inner">
+      <a href="/"><img src="assets/images/Logo.png" alt="Invigor8 Logo" class="site-logo"></a>
+      <div class="nav-desktop">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/weight-loss" class="nav-link">Weight Loss</a>
+        <a href="/mood-energy" class="nav-link">Mood Energy</a>
+        <a href="/strength" class="nav-link">Strength</a>
+        <a href="/anti-aging" class="nav-link">Anti-Aging</a>
+      </div>
+      <div class="nav-actions"><a href="/register" class="btn-primary">Get Started</a></div>
+      <button class="menu-toggle" id="mobile-menu-button" aria-label="Toggle menu"><i class="fas fa-bars" id="menu-icon"></i></button>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="/">Home</a>
+      <a href="/weight-loss">Weight Loss</a>
+      <a href="/mood-energy">Mood Energy</a>
+      <a href="/strength">Strength</a>
+      <a href="/anti-aging">Anti-Aging</a>
+      <a href="/register" class="btn-primary" style="margin: 0.75rem; text-align: center;">Get Started</a>
+    </div>
+  </div>
+</header>
+
+<section class="register-hero">
+  <div class="register-hero-left">
+    <div class="register-hero-content">
+      <h1>Start Your<br><span class="sph-accent">Health Journey</span></h1>
+      <p>Connect with a licensed healthcare provider and get a personalized treatment plan — 100% online, delivered to your door.</p>
+
+      <div class="register-trust">
+        <div class="register-trust-item">
+          <div class="register-trust-icon"><i class="fas fa-shield-alt"></i></div>
+          <div><strong>100% Risk-Free</strong><p>Full refund if you're not eligible</p></div>
+        </div>
+        <div class="register-trust-item">
+          <div class="register-trust-icon"><i class="fas fa-lock"></i></div>
+          <div><strong>HIPAA Secure</strong><p>Your data is fully protected</p></div>
+        </div>
+        <div class="register-trust-item">
+          <div class="register-trust-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div><strong>Hawaii &amp; Oregon</strong><p>Licensed providers in your state</p></div>
+        </div>
+        <div class="register-trust-item">
+          <div class="register-trust-icon"><i class="fas fa-truck"></i></div>
+          <div><strong>Free Delivery</strong><p>Medications shipped to your door</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="register-hero-right">
+    <div class="register-form-card">
+      <h2>Create Your Account</h2>
+      <p>Available for Hawaii and Oregon residents only.</p>
+
+      <form id="register-form" action="/confirmation" method="get">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first_name" placeholder="John" required>
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last_name" placeholder="Smith" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+1 (808) 000-0000" required>
+        </div>
+        <div class="form-group">
+          <label for="state">State of Residence</label>
+          <select id="state" name="state" required>
+            <option value="">Select your state</option>
+            <option value="HI">Hawaii</option>
+            <option value="OR">Oregon</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="program">Program Interest</label>
+          <select id="program" name="program" required>
+            <option value="">Select a program</option>
+            <option value="weight-loss">Weight Loss</option>
+            <option value="mood-energy">Mood &amp; Energy</option>
+            <option value="strength">Strength</option>
+            <option value="anti-aging">Anti-Aging</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="register-checkbox">
+            <input type="checkbox" name="attestation" required>
+            <span>I attest that I am physically located in Hawaii or Oregon at the time of service.</span>
+          </label>
+        </div>
+        <button type="submit" class="btn-primary form-submit">Submit Medical History <i class="fas fa-arrow-right"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <img src="assets/images/Logo.png" alt="Invigor8" class="footer-logo">
+        <div class="social-links">
+          <a href="https://www.facebook.com/people/Invigor8-Medical-Care/61584051611977/" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/invigor8medical/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@Invigor8MedicalCare" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/weight-loss">Weight Loss</a></li>
+          <li><a href="/mood-energy">Mood &amp; Energy</a></li>
+          <li><a href="/strength">Strength</a></li>
+          <li><a href="/anti-aging">Anti-Aging</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="/faq">FAQ</a></li>
+          <li><a href="/privacy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms &amp; Conditions</a></li>
+          <li><a href="/telehealth-policy">Telehealth Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h3>Get In Touch</h3>
+        <ul>
+          <li><i class="fas fa-phone"></i> +1-808-427-4550</li>
+          <li><i class="fas fa-envelope"></i> admin@invigor8medical.com</li>
+          <li><i class="fas fa-clock"></i> 24/7 Support</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Invigor8. All rights reserved.</p>
+    </div>
+    <p class="footer-disclaimer">Invigor8 works with a select group of licensed, accredited pharmacies that fulfill prescriptions for our Hawaii and Oregon-based patients.</p>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
